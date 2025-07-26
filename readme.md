@@ -4,7 +4,7 @@ _Inserimento dati da un file.csv nel database MySQL con un solo comando_
 ## 📌 Overview 
 Questa è una **comand-line ETL pipeline** scritta in Python che:
 
-1. Estrae dati da un file CSV in './data/'
+1. Estrae dati da un file CSV in `./data/`
 2. Trasforma questi dati (pulisce alcuni campi, divide la location, aggiunge metadati come la provenienza)
 3. Lo carica all'interno di una MySQL table ('university_rank') cosi che possano essere analizzati 
 
@@ -13,16 +13,16 @@ Questa è una **comand-line ETL pipeline** scritta in Python che:
 
 ### 1.Prerequisites
 - Python >= 3.8
-Puoi controlarlo con '''bash python --version''' 
+Puoi controlarlo con `python --version`
 - MySQL server (o un container Docker)
-Se non vuoi installare MySQL, si può usare il docker Compose che ho aggiunto alla repository (docker-compose.yml).  comando da eseguire => '''docker-compose up'''
+Se non vuoi installare MySQL, si può usare il docker Compose che ho aggiunto alla repository (docker-compose.yml).  comando da eseguire => `docker-compose up`
 - Librerie Python 
-Si installa tutto con '''bash pip install -r requirements.txt'''
+Si installa tutto con ` pip install -r requirements.txt`
 
 ### 2. Clone / Download 
 Questo è il comando per scaricare il progetto 
-'''bash  git clone <repo-url> ''' (scarica cartella ETL con tutto dentro)
-'''bash  cd ETL ''' (Entra nella cartella e qui si eseguono i comandi successivi es. python main.py , docker compose up , ecc.).
+`bash  git clone <repo-url> ` (scarica cartella ETL con tutto dentro)
+`bash  cd ETL ` (Entra nella cartella e qui si eseguono i comandi successivi es. python main.py , docker compose up , ecc.).
 
 
 ## Ordine con cui eseguire l'ETL
@@ -30,7 +30,7 @@ Questo è il comando per scaricare il progetto
 1. Attivare il Virtual Environment 
 2. Installare le dipendenze in requirements.txt
 3. Avviare il database con Docker Compose (anche se avviare il container MySQL non ha bisogno dell'ambiente virtuale Python dato che gira indipendentemente, si può quindi fare anche prima o dopo i passi 1-2, ma prima di eseguire main.py)
-4. Lanciare l'ETL con '''python main.py [nome_file.csv]''' (file deve essere caricato nella dartella data)
+4. Lanciare l'ETL con `python main.py [nome_file.csv]` (file deve essere caricato nella dartella data)
 
 ## Maggiori informazioni 
 
