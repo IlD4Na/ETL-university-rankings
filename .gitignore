@@ -1,0 +1,45 @@
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache e compilati
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Paket, build, distribuzione
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Cache, test, log
+.cache/
+.tox/
+.nox/
+.pytest_cache/
+*.log
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Database SQLite (se usi .db locali)
+*.db
+
+# File di ambiente
+.env
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
